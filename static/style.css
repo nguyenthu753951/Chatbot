@@ -2,6 +2,7 @@
 body {
     font-family: sans-serif;
     background-color: rgb(191	202	230);
+
 }
 *{
     padding: 0;
@@ -44,13 +45,14 @@ h3 {
     border: none;
     border-bottom: 3px solid #009688;
     font-family: monospace;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 #buttonInput {
     padding: 3px;
     font-family: monospace;
-    font-size: 17px;
+    font-size: 19px;
+    background-color: bisque;
 }
 .userText {
     color: rgb(255 240 240);
@@ -82,6 +84,22 @@ h3 {
     border-radius: 2px;
     padding-bottom: 5px;
 }
+.botText2 {
+    color: rgb(255 240 240);
+    font-family: monospace;
+    font-size: 17px;
+    text-align: left;
+    line-height: 30px;
+    border-radius: 2px;
+    padding-bottom: 5px;
+}
+
+.botText2 span {
+    background-color: #9966CC;
+    padding: 10px;
+    border-radius: 2px;
+    padding-bottom: 5px;
+}
 
 #tidbit {
     position:absolute;
@@ -96,3 +114,28 @@ h3 {
 .logo img{
     width: 30%;
 }
+.icon__bot{
+    height: 50px;
+    width: 50px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    margin:0 10px;
+    color: blueviolet;
+  }
+  .botText{
+    display: flex;
+    align-items: center;
+  }
+  .icon__user{
+    height: 50px;
+    width: 50px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    margin:0 10px;
+    color: #6666FF;
+  }
+  /* .userText{
+    display: flex;
+      float: right;
+      
+  } */

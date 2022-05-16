@@ -2,30 +2,37 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="/static/style.css">
-    <link rel="icon" href="/img/pannel.jpg" type="image/gif">
-    <title>Chatbot hỗ trợ</title>
+    <link rel="icon" href="../img/pannel.jpg" type="image/gif">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" > -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Family4 hỗ trợ</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
   </head>
-  <body>
+  <body background="../img/Nengo.jpg" style="background-size: 100%;" >
     <header>
       <div class="logo"> <img  src="/img/pannel.jpg" alt="Pannel">
       </div>
     </header>
-    <h1>Cần gì đó có ChatterBot đây</h1>
-    <h3>Hãy trình bày thắc mắc <a href="https://github.com/nguyenthu753951/Chatbot">ChatterBot</a> giải quyết cho!</h3>
+    <h1 style="font-family: Playfair Display;">Cần gì đó có Family4 đây</h1>
+    <h3 style="font-family: Playfair Display;">Hãy trình bày thắc mắc <a href="https://github.com/nguyenthu753951/Chatbot">Family4</a> giải quyết cho!</h3>
     <div>
-      <div id="chatbox">
-        <p class="botText"><span>Xin chào, tôi là Chatterbot đây.</br>Bạn cần Chatterbot giúp gì nào?</span></p>
+      <div id="chatbox" >
+        <p class="botText">
+          <ion-icon class="icon__bot" name="headset-outline"></ion-icon>
+          <span>
+          Xin chào, tôi là Family4 đây.</br>Bạn cần Family4 giúp gì nào?</span></p>
       
       </div>
       <div id="userInput">
-        <input id="textInput" type="text" name="msg" placeholder="Message">
-        <input id="buttonInput" type="submit" value="Send">
+        <input id="textInput" type="text" name="msg" placeholder="Nhập văn bản">
+        <input id="buttonInput" type="submit" value="Gửi">
       </div>
       <script>
         function getBotResponse() {
           var rawText = $("#textInput").val();
-          var userHtml = '<p class="userText"><span>' + rawText + '</span></p>';
+          var userHtml = '<p class="userText"><span>' + rawText + '</span><ion-icon class="icon__user" name="person-circle"></ion-icon></p>';
           $("#textInput").val("");
           $("#chatbox").append(userHtml);
           document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
@@ -45,5 +52,7 @@
         })
       </script>
     </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
